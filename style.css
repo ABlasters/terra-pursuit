@@ -1,0 +1,45 @@
+html, body{
+    font-family: roboto;
+    font-size: 16px;
+    line-height: 1.4;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #757575;
+}
+.nav-bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 66px;
+    line-height: 66px;
+    background-color: #BDBDBD;
+}
+a{
+    color: inherit;
+}
+.logo{
+    float: left;
+    height: 66px;
+    width: 66px;
+    padding: 0 25px;
+}
+.nav{
+    float: left;
+}
+.nav a{
+        padding: 0 10px;
+        text-decoration: none;
+}
+.nav a:hover{
+        color: yellow;
+}
+.container{
+    overflow: auto;
+    padding-top: 66px;
+    margin: 0 20px;
+}
+p,h1,h2{
+    background-color: #9E9E9E;
+}
+@import "./_responsive.scss";
