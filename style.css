@@ -5,15 +5,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #757575;
-}
-.nav-bar{
-    position: fixed;
-    left: 0;
-    right: 0;
-    height: 66px;
-    line-height: 66px;
-    background-color: #BDBDBD;
+    text-decoration: none;
 }
 a{
     color: inherit;
@@ -25,14 +17,22 @@ a{
     padding: 0 25px;
 }
 .nav{
-    float: left;
+position: absolute;
+padding: 50px;
+justify-content: space-between;
+width: 100%;
+box-sizing: border-box;
+color: white;
+background-color: #b6b6b6;
+list-style: none;
 }
 .nav a{
-        padding: 0 10px;
-        text-decoration: none;
+    padding: 0 10px;
+    text-decoration: none;
+    text-align: justify;
 }
 .nav a:hover{
-        color: yellow;
+    color: white;
 }
 .container{
     overflow: auto;
@@ -40,6 +40,20 @@ a{
     margin: 0 20px;
 }
 p,h1,h2{
-    background-color: #9E9E9E;
+    background-color: #787878;
+    color: black;
 }
-@import "./_responsive.scss";
+.logo_index{
+    height: 100px;
+    width: 500px;
+}
+.nav .nav-links ul{
+    list-style: none;
+    color: white;
+    float: right;
+}
+@media screen and (max-width: 900px) {
+    .nav{
+        display: none;
+    }
+}
